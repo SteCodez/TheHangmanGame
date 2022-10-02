@@ -184,6 +184,10 @@ if __name__ == "__main__":
         if choice > len(topics)+1:
             clear()
             print("Not that many topics! Please select again")
-            continue
+            break
         
+        if choice == len(topics)+1:
+            print()
+            print("Thanks for playing!Come back again some time :) ")
+            
         
