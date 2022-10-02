@@ -50,3 +50,6 @@ def print_word(values):
     for x in values:
         print(x, end="")
     print()
+
+
+topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
