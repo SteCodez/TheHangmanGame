@@ -169,4 +169,7 @@ if __name__ == "__main__":
         print("-----------------------------------------")
         print("\t\tGAME MENU")
         print("-----------------------------------------")
-        
+        for key in topics:
+            print("Press", key, "to select", topics[key])
+        print("press", len(topics)+1, "to quit")
+        print()
