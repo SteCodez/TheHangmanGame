@@ -181,3 +181,9 @@ if __name__ == "__main__":
             print("Invalid choice, please select again!")
             continue
         
+        if choice > len(topics)+1
+            clear()
+            print("Not that many topics! Please select again")
+            continue
+        
+        
