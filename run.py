@@ -135,7 +135,7 @@ variables required for smooth functioning of our hangman game.
             # Updating the word display
             for i in range(len(word)):
                 if word[i].upper() == inp.upper():
-                    word_display[i] = inp.upper()  # everything uppercase
+                    word_display[i] = inp.upper()  # everything added in uppercase
 
             if check_win(word_display):  # checks for win condition
                 clear()
@@ -145,10 +145,21 @@ variables required for smooth functioning of our hangman game.
                 break
         clear()
 
+if __name__ == "__main__":
+    
+    clear()
 
-topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
+    topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
-dataset = {"Random words": [],
-           "Famous Buildings": [],
-           "Animals": []
-           }
+    dataset = {"Random words": ["aback","abaft","abandoned",
+            "abashed","aberrant","abhorrent","aboard","aboriginal","abortive",
+            "abounding","abrasive","abrupt","absent","absorbed","absorbing","abstracted",
+            "absurd","abundant","abusive","acceptable","accessible","accidental","accurate","disagreeable",
+            "disastrous","discreet","disgusted","disgusting","disillusioned","scandalous","scarce",
+            "scared","scary","scattered","scientific","scintillating","scrawny","zealous",
+            "zesty","zippy", "recess","record","regret","relation",
+            "religion","representative","request",],
+            "Famous Buildings": [],
+            "Animals": ["Tiger", "Elephant", "Polar bear", "Leaopard", "Emu", "Great white shark", "Deer"
+                        "Giraffe", ]
+            }
