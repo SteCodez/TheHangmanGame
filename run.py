@@ -21,3 +21,16 @@ def update_hangman_image(values):
     print("  _______________|_|___")
     print("  `````````````````````")
     print()
+
+
+def update_hangman_image_win():
+    print()
+    print("\t +--------+")
+    print("\t         | |")
+    print("\t         | |")
+    print("\t O       | |")
+    print("\t/|\\      | |")
+    print("\t |       | |")
+    print("  ______/_\\______|_|___")
+    print("  `````````````````````")
+    print()
