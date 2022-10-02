@@ -119,6 +119,14 @@ variables required for smooth functioning of our hangman game.
             show_hangman_values[chances] = hangman_values[chances]
             chances = chances + 1
 
+        if chances == len(hangman_values):
+            print()
+            clear()
+            print("\tYOU TRIED YOUR BEST, GAME OVER!")
+            update_hangman_image(hangman_values)
+            print("The word is :", word.upper())
+            break
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
