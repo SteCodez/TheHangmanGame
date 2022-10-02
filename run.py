@@ -103,6 +103,16 @@ variables required for smooth functioning of our hangman game.
             print("Please enter a valid choice!")
             continue
 
+        if not inp[0].isalpha():
+            clear()
+            print("Please enter a valid choice!")
+            continue
+
+        if inp.upper() in incorrect:
+            clear
+            print("Already tried")
+            continue
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
