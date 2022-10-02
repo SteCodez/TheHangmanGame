@@ -78,6 +78,8 @@ reducing the number of chances left, and printing the specific state of hangman.
     correct_letters = []  # stores the correct letters in the word
     incorrect = []  # stores all incorrect guesses
     chances = 0  # stores number of chances
+    hangman_values = ['O', '/', '|', '\\', '|', '/', '\\']
+    show_hangman_values = [' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
