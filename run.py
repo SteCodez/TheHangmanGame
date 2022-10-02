@@ -164,7 +164,7 @@ if __name__ == "__main__":
                         "Giraffe", ]
             }
 
-    while True:
+    while True: #start of game loop
         
         print("-----------------------------------------")
         print("\t\tGAME MENU")
@@ -173,3 +173,11 @@ if __name__ == "__main__":
             print("Press", key, "to select", topics[key])
         print("press", len(topics)+1, "to quit")
         print()
+        
+        try:
+            choice = int(input("Enter your choice here = "))
+        except ValueError:
+            clear()
+            print("Invalid choice, please select again!")
+            continue
+        
