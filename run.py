@@ -53,3 +53,8 @@ def print_word(values):
 
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
+
+dataset = {"Random words": [],
+           "Famous Buildings": [],
+           "Animals": []
+           }
