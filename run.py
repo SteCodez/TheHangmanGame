@@ -159,9 +159,12 @@ if __name__ == "__main__":
             "scared","scary","scattered","scientific","scintillating","scrawny","zealous",
             "zesty","zippy", "recess","record","regret","relation",
             "religion","representative","request",],
-            "Famous Buildings": [],
+            "Famous Buildings": ["Lotus temple", " Dome of the Rock", "One world trade centre", 
+                                 "Petronas towers", "The white house", "St Basil Cathedral"
+                                 "Leaning tower of pisa", "Buckingham Palace", "Pantheon",
+                                 "Guggenheim Museum", "Blue domed church"],
             "Animals": ["Tiger", "Elephant", "Polar bear", "Leaopard", "Emu", "Great white shark", "Deer"
-                        "Giraffe", ]
+                        "Giraffe", "Archaeopteryx", "Bullmastiff", "Devils coach horse beetle" ]
             }
 
     while True: #start of game loop
