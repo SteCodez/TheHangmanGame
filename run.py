@@ -55,12 +55,11 @@ This function will print the word to be guessed
         print(x, end="")
     print()
 
-    """
-    This function will check for a win situation.
-    """
-
 
 def check_win(values):
+     """
+    This function will check for a win situation.
+    """
     for character in values:
         if character == '_':
             return False
@@ -71,6 +70,8 @@ def hangman_game(word):
     """
 This contains the entire game functioning. It includes storing incorrect guesses,
 reducing the number of chances left, and printing the specific state of hangman.
+Code snippet contains all the elementary data structures and
+variables required for smooth functioning of our hangman game.
     """
     clear()
 
@@ -80,6 +81,14 @@ reducing the number of chances left, and printing the specific state of hangman.
     chances = 0  # stores number of chances
     hangman_values = ['O', '/', '|', '\\', '|', '/', '\\']
     show_hangman_values = [' ', ' ', ' ', ' ', ' ', ' ', ' ']
+    
+    for character in word: #this loop creates the display word
+        if character.isalpha():
+            word_display.append('_')
+            correct_letters.append(character.upper())
+        else:
+            word_display.append(character)
+            
 
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
