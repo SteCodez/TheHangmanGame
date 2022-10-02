@@ -109,7 +109,7 @@ variables required for smooth functioning of our hangman game.
             continue
 
         if inp.upper() in incorrect:  # prints statement if letter has already been guessed
-            clear
+            clear()
             print("Already tried")
             continue
 
@@ -184,10 +184,10 @@ if __name__ == "__main__":
         if choice > len(topics)+1:
             clear()
             print("Not that many topics! Please select again")
-            break
+            continue
         
         if choice == len(topics)+1:
             print()
             print("Thanks for playing!Come back again some time :) ")
-            
+            break
         
