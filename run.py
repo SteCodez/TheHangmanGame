@@ -45,12 +45,29 @@ def update_hangman_image_win():
 
 
 def print_word(values):
+    """
+This function will print the word to be guessed
+    """
+
     print()
     print("\t", end="")
     for x in values:
         print(x, end="")
     print()
 
+    """
+    This function will check for a win situation.
+    """
+
+
+def check_win(values):
+    for character in values:
+        if character == '_':
+            return False
+        return True
+
+
+def
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
