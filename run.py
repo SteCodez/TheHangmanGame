@@ -67,7 +67,13 @@ def check_win(values):
         return True
 
 
-def
+def hangman_game(word):
+    """
+This contains the entire game functioning. It includes storing incorrect guesses,
+reducing the number of chances left, and printing the specific state of hangman.
+    """
+    clear()
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
