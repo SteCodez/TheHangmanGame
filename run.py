@@ -89,6 +89,14 @@ variables required for smooth functioning of our hangman game.
         else:
             word_display.append(character)
 
+    while True:  # printing values
+        # connecting ith hangman values
+        update_hangman_image(show_hangman_values)
+        print_word(word_display)
+        print()
+        print("Incorrect character : ", incorrect)
+        print()
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
