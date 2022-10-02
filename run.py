@@ -191,3 +191,7 @@ if __name__ == "__main__":
             print("Thanks for playing!Come back again some time :) ")
             break
         
+        chosen_topic = topics[choice]
+        ran = random.choice(dataset[chosen_topic])
+        
+        hangman_game(ran)
