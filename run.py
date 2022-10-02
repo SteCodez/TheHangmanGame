@@ -74,10 +74,10 @@ reducing the number of chances left, and printing the specific state of hangman.
     """
     clear()
 
-    word_display = []
-    correct_letters = []
-    incorrect = []
-    chances = 0
+    word_display = []  # stores letters to be diplayed
+    correct_letters = []  # stores the correct letters in the word
+    incorrect = []  # stores all incorrect guesses
+    chances = 0  # stores number of chances
 
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
