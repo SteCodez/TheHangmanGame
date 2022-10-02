@@ -123,9 +123,17 @@ variables required for smooth functioning of our hangman game.
             print()
             clear()
             print("\tYOU TRIED YOUR BEST, GAME OVER!")
+            # hangman value funtion updated
             update_hangman_image(hangman_values)
             print("The word is :", word.upper())
             break
+
+        else:
+
+            # Updating the word display
+            for i in range(len(word)):
+                if word[i].upper() == inp.upper():
+                    word_display[i] = inp.upper()  # everything uppercase
 
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
