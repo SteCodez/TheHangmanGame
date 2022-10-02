@@ -163,3 +163,10 @@ if __name__ == "__main__":
             "Animals": ["Tiger", "Elephant", "Polar bear", "Leaopard", "Emu", "Great white shark", "Deer"
                         "Giraffe", ]
             }
+
+    while True:
+        
+        print("-----------------------------------------")
+        print("\t\tGAME MENU")
+        print("-----------------------------------------")
+        
