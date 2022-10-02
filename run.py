@@ -74,6 +74,11 @@ reducing the number of chances left, and printing the specific state of hangman.
     """
     clear()
 
+    word_display = []
+    correct_letters = []
+    incorrect = []
+    chances = 0
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
