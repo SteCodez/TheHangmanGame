@@ -28,6 +28,10 @@ def update_hangman_image(values):
 
 
 def update_hangman_image_win():
+    """
+    this function displays the hangman image after the user sucessfully completes
+    the game, printing the escaped hangman when the player wins.
+    """
     print()
     print("\t +--------+")
     print("\t         | |")
@@ -37,4 +41,12 @@ def update_hangman_image_win():
     print("\t |       | |")
     print("  ______/_\\______|_|___")
     print("  `````````````````````")
+    print()
+
+
+def print_word(values):
+    print()
+    print("\t", end="")
+    for x in values:
+        print(x, end="")
     print()
