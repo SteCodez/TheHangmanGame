@@ -10,6 +10,10 @@ def clear():
 
 
 def update_hangman_image(values):
+    """
+    This function will print the hangman to the terminal and update
+    it as the player makes guesses.
+    """
     print()
     print("\t +--------+")
     print("\t |       | |")
