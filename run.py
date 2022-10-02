@@ -108,14 +108,16 @@ variables required for smooth functioning of our hangman game.
             print("Please enter a valid choice!")
             continue
 
-        if inp.upper() in incorrect:
+        if inp.upper() in incorrect:  # prints statement if letter has already been guessed
             clear
             print("Already tried")
             continue
 
         if inp.upper() not in correct_letters:
 
+            # adds incorrect guesses to guessed lisst
             incorrect.append(inp.upper())
+
             show_hangman_values[chances] = hangman_values[chances]
             chances = chances + 1
 
@@ -134,6 +136,14 @@ variables required for smooth functioning of our hangman game.
             for i in range(len(word)):
                 if word[i].upper() == inp.upper():
                     word_display[i] = inp.upper()  # everything uppercase
+
+        if check_win(word_display):  # checks for win condition
+            clear()
+            print("\tCongratulations! ")
+            update_hangman_image_win()
+            print("The word is :", word.upper())  # diplays finished word
+            break
+        clear()
 
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
