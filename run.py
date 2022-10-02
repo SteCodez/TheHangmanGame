@@ -97,6 +97,12 @@ variables required for smooth functioning of our hangman game.
         print("Incorrect character : ", incorrect)
         print()
 
+        inp = input("Enter a character = ")
+        if len(inp) != 1:
+            clear()
+            print("Please enter a valid choice!")
+            continue
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
