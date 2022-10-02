@@ -121,14 +121,14 @@ variables required for smooth functioning of our hangman game.
             show_hangman_values[chances] = hangman_values[chances]
             chances = chances + 1
 
-        if chances == len(hangman_values):
-            print()
-            clear()
-            print("\tYOU TRIED YOUR BEST, GAME OVER!")
-            # hangman value funtion updated
-            update_hangman_image(hangman_values)
-            print("The word is :", word.upper())
-            break
+            if chances == len(hangman_values):
+                print()
+                clear()
+                print("\tYOU TRIED YOUR BEST, GAME OVER!")
+                # hangman value funtion updated
+                update_hangman_image(hangman_values)
+                print("The word is :", word.upper())
+                break
 
         else:
 
@@ -137,12 +137,12 @@ variables required for smooth functioning of our hangman game.
                 if word[i].upper() == inp.upper():
                     word_display[i] = inp.upper()  # everything uppercase
 
-        if check_win(word_display):  # checks for win condition
-            clear()
-            print("\tCongratulations! ")
-            update_hangman_image_win()
-            print("The word is :", word.upper())  # diplays finished word
-            break
+            if check_win(word_display):  # checks for win condition
+                clear()
+                print("\tCongratulations! ")
+                update_hangman_image_win()
+                print("The word is :", word.upper())  # diplays finished word
+                break
         clear()
 
 
