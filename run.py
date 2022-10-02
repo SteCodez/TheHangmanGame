@@ -113,6 +113,12 @@ variables required for smooth functioning of our hangman game.
             print("Already tried")
             continue
 
+        if inp.upper() not in correct_letters:
+
+            incorrect.append(inp.upper())
+            show_hangman_values[chances] = hangman_values[chances]
+            chances = chances + 1
+
 
 topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
 
