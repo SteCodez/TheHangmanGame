@@ -131,7 +131,6 @@ variables required for smooth functioning of our hangman game.
                 break
 
         else:
-
             # Updating the word display
             for i in range(len(word)):
                 if word[i].upper() == inp.upper():
@@ -143,32 +142,28 @@ variables required for smooth functioning of our hangman game.
                 update_hangman_image_win()
                 print("The word is :", word.upper())  # diplays finished word
                 break
-        clear()
+        os.system("clear")
 
 if __name__ == "__main__":
-    
-    clear()
+    os.system("clear")
 
-    topics = {1: "Random words", 2: "Famous buildings", 3: "Animals"}
+    topics = {1: "Random words", 2: "Animals"}
 
     dataset = {"Random words": ["aback","abaft","abandoned",
             "abashed","aberrant","abhorrent","aboard","aboriginal","abortive",
             "abounding","abrasive","abrupt","absent","absorbed","absorbing","abstracted",
-            "absurd","abundant","abusive","acceptable","accessible","accidental","accurate","disagreeable",
+            "absurd","abundant","abusive","acceptable","accessible",
+            "accidental","accurate","disagreeable",
             "disastrous","discreet","disgusted","disgusting","disillusioned","scandalous","scarce",
             "scared","scary","scattered","scientific","scintillating","scrawny","zealous",
             "zesty","zippy", "recess","record","regret","relation",
             "religion","representative","request",],
-            "Famous Buildings": ["Lotus temple", " Dome of the Rock", "One world trade centre", 
-                                 "Petronas towers", "The white house", "St Basil Cathedral"
-                                 "Leaning tower of pisa", "Buckingham Palace", "Pantheon",
-                                 "Guggenheim Museum", "Blue domed church"],
-            "Animals": ["Tiger", "Elephant", "Polar bear", "Leaopard", "Emu", "Great white shark", "Deer"
+            "Animals": ["Tiger", "Elephant", "Polar bear", "Leaopard",
+                        "Emu", "Great white shark", "Deer"
                         "Giraffe", "Archaeopteryx", "Bullmastiff", "Devils coach horse beetle" ]
             }
 
     while True: #start of game loop
-        
         print("-----------------------------------------")
         print("\t\tGAME MENU")
         print("-----------------------------------------")
@@ -176,25 +171,21 @@ if __name__ == "__main__":
             print("Press", key, "to select", topics[key])
         print("press", len(topics)+1, "to quit")
         print()
-        
         try:
             choice = int(input("Enter your choice here = "))
         except ValueError:
             clear()
             print("Invalid choice, please select again!")
             continue
-        
         if choice > len(topics)+1:
             clear()
             print("Not that many topics! Please select again")
             continue
-        
         if choice == len(topics)+1:
             print()
             print("Thanks for playing!Come back again some time :) ")
             break
-        
         chosen_topic = topics[choice]
         ran = random.choice(dataset[chosen_topic])
-        
         hangman_game(ran)
+        
