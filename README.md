@@ -13,6 +13,7 @@
 
 ---
 ---
+
 ## Technologies
 ***
 
@@ -25,6 +26,7 @@
 
 ---
 ---
+
 ## Testing
 ***
 
@@ -44,6 +46,9 @@
 * More topics
 * A easy/medium/hard difficulty setting
 * A 2 player system allowing players to compete
+---
+---
+
 
 ## Deployment
 ***
