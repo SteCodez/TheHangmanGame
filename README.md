@@ -8,8 +8,8 @@
 
 * To have a challenging game of Hangman
 * To have multiple options.
-* To have a seperate image for game completion
-* To have messages acknowledging 
+* To have a seperate image for game completion.
+* To have messages acknowledging completion or failure to complete the game.
 
 ---
 ---
@@ -30,7 +30,14 @@
 
  | What is expected. | Did the element successfully perform its task? If not, why? | How was the issue fixed? | Approved/issue resolved? |
    |-------------| ------------ | ------------- |------------- |
-| I expect the program to run when the "Run program" button is pressed on Heroku | Yes the program ran as expected | n/a | Yes |
+| I expect the program to run when the "Run program" button is pressed on Heroku. | Yes the program ran as expected. | n/a | Yes. |
+|I expect all options on the menu to take me to the requested topic. | The program did not take me to each topic as expected, topic 2 would not run properly. | The issue was fixed by removing the topic altogether as no error was shown and I was short on time to properly investigate the bug. | Temporary fix applied, will revisit at a later date. | No. |
+| I expect the quit option on the menu to return me to the terminal base fucntion. | The quit button performed as expected. | n/a | Yes. |
+| I expect to be shown an error message when I have entered either an invalid number of characters or numbers. | A message was shown requesting the player to input valid options to the game. | n/a | Yes. |
+| I expect the hangman figure to update accordingly with each incorrect guess. | The hangman figure updated as expected. | n/a | Yes. |
+| I expect the game to show me the hangman escaping upon victory conditions being met. | The escape figure displayed as expected. | n/a | Yes. |
+| I expect the game to display all incorrect guessed letters for reference as the player progresses. | The incorrect guesses displayed as expected. | n/a | Yes. |
+
 
 
 
