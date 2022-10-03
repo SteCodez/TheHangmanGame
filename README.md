@@ -38,7 +38,12 @@
 | I expect the game to show me the hangman escaping upon victory conditions being met. | The escape figure displayed as expected. | n/a | Yes. |
 | I expect the game to display all incorrect guessed letters for reference as the player progresses. | The incorrect guesses displayed as expected. | n/a | Yes. |
 
+#### Possible future additions
 
+* A timing system
+* More topics
+* A easy/medium/hard difficulty setting
+* A 2 player system allowing players to compete
 
 
 #### Unresolved problems
