@@ -84,7 +84,7 @@ variables required for smooth functioning of our hangman game.
 
     for character in word:  # this loop creates the display word
         if character.isalpha():
-            word_display.append('_')
+            word_display.append(' _ ')
             correct_letters.append(character.upper())
         else:
             word_display.append(character)
