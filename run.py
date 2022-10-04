@@ -58,7 +58,7 @@ This function will print the word to be guessed
 
 def check_win(values):
     """
-    This function will check for a win situation.
+    This function will check if the word guessed is = to one of the hidden letters and if so update the appropriate section of the game
     """
     for character in values:
         if character == '_':
