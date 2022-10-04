@@ -2,7 +2,7 @@
 
 # Project-3- The Hangman Game
 
-![]()
+![The base game](https://github.com/SteCodez/TheHangmanGame/blob/main/images/game_screen.png?raw=true)
 
 ## Goals
 ***
