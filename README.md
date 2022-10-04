@@ -3,6 +3,7 @@
 # Project-3- The Hangman Game
 
 ![The base game](https://github.com/SteCodez/TheHangmanGame/blob/main/images/game_screen.png?raw=true)
+![Lucid chart](https://github.com/SteCodez/TheHangmanGame/blob/main/images/lucidchart_hangman.png?raw=true)
 
 ## Goals
 ***
@@ -40,7 +41,15 @@
 | I expect the hangman figure to update accordingly with each incorrect guess. | The hangman figure updated as expected. | n/a | Yes. |
 | I expect the game to show me the hangman escaping upon victory conditions being met. | The escape figure displayed as expected. | n/a | Yes. |
 | I expect the game to display all incorrect guessed letters for reference as the player progresses. | The incorrect guesses displayed as expected. | n/a | Yes. |
+|I expect the game to print out words at random instead of in order to maintain replayabiliy. | The game printed out random words instead of in order as expected. | n/a | Yes. |
 
+
+![Hangman lose](https://github.com/SteCodez/TheHangmanGame/blob/main/images/game_over_screen.png?raw=true)
+![Hangman win](https://github.com/SteCodez/TheHangmanGame/blob/main/images/hangman_escape_screen.png?raw=true)
+![incorrect guesses](https://github.com/SteCodez/TheHangmanGame/blob/main/images/incorrect_guess.png?raw=true)
+![Number entered](https://github.com/SteCodez/TheHangmanGame/blob/main/images/number_entered_test.png?raw=true)
+
+)
 #### Possible future additions
 
 * A timing system
